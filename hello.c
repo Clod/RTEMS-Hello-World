@@ -52,7 +52,7 @@ rtems_task Init(
     
     /* Detect button press (transition from not pressed to pressed) */
     if (current_button_state && !last_button_state) {
-      printf( "Version 10 - Button pressed! Hello World #%d\n", counter );
+      printf( "Version 12 - Button pressed! Hello World #%d\n", counter );
       counter++;
     }
     

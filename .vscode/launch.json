@@ -12,8 +12,8 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/home/claudio/quick-start/rtems/6/bin/arm-rtems6-gdb",
-            "miDebuggerServerAddress": "192.168.0.104:61234",
+            "miDebuggerPath": "/opt/rtems/6.1/bin/arm-rtems6-gdb",
+            "miDebuggerServerAddress": "host.docker.internal:61234",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing",

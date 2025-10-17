@@ -51,7 +51,7 @@ rtems_task Init(
     
     /* Detect button press (transition from not pressed to pressed) */
     if (current_button_state && !last_button_state) {
-      printf( "Button pressed! Hello World #%d\n", counter );
+      printf( "Container Button pressed! Hello World #%d\n", counter );
       counter++;
     }
     

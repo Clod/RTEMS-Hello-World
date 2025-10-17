@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <rtems/version.h>
 
 /* STM32H743 RCC (Reset and Clock Control) */
 #define RCC_BASE        0x58024400
@@ -51,7 +52,7 @@ rtems_task Init(
     
     /* Detect button press (transition from not pressed to pressed) */
     if (current_button_state && !last_button_state) {
-      printf( "Container Button pressed! Hello World #%d\n", counter );
+      printf( "Version 10 - Button pressed! Hello World #%d\n", counter );
       counter++;
     }
     

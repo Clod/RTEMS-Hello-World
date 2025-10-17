@@ -68,6 +68,7 @@ For example, if you are using a development environment where a host directory i
 ```shell
 # This is an example of copying the file to a shared volume.
 # The path /out/hello.elf is specific to a particular dev environment.
+# This should be automatically done by waf
 $ cp build/arm-rtems6-nucleo-h743zi/hello.exe /out/hello.elf
 ```
 

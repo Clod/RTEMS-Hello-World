@@ -30,3 +30,8 @@ def build(bld):
         target='hello.exe',
         cflags='-g -O2',
         source=['hello.c', 'init.c'])
+    
+    # Copy to an absolute path after the program is built
+    bld(rule='cp ${SRC} ${TGT}',
+        source='hello.exe',
+        target='/out/hello.elf')

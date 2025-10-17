@@ -24,6 +24,12 @@ and then:
 
 $ ./waf
 
+Then copy the exe file to the host computer to flash the test board.
+
+% cp build/arm-rtems6-nucleo-h743zi/hello.exe /out/hello.elf
+
+Note: /out is automagically maped to users $HOME/rtems-out folder in the host computer.
+If it does not exist, it gets created.
 
 In MAC in order to check UART output use screen command:
 

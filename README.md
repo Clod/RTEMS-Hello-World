@@ -41,10 +41,10 @@ $ git submodule update --init
 
 Run `waf configure` and point it to your RTEMS installation and the desired Board Support Package (BSP).
 
-The example below is for RTEMS 6 on the `nucleo-h743zi` board. **You must change these paths and BSP to match your setup.**
+The example below is for RTEMS 6.1 on the `nucleo-h743zi` board. **You must change these paths and BSP to match your setup.**
 
 ```shell
-$ waf configure --rtems=/opt/rtems/6 --rtems-bsp=arm/nucleo-h743zi
+$ ./waf configure --rtems=/opt/rtems/6.1 --rtems-bsp=arm/nucleo-h743zi
 ```
 
 ### 3. Build the Application
@@ -52,7 +52,7 @@ $ waf configure --rtems=/opt/rtems/6 --rtems-bsp=arm/nucleo-h743zi
 Compile the project by running `waf`:
 
 ```shell
-$ waf
+$ ./waf
 ```
 
 The executable will be created in the `build/` directory, inside a folder named after your toolchain and BSP. For the example above, it would be: `build/arm-rtems6-nucleo-h743zi/hello.exe`.
